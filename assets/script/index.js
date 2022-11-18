@@ -51,6 +51,7 @@ currentTime();
 function isTime(time) {
   if (time.length == 4 && time >= 0 && time < 2400 && input.value.includes(':')) {
     alarmTime.innerHTML = ` ${input.value}`;
+    alarmTime.style.marginLeft = '6px';
   } else {
     alert('Please input a time (00:00)')
   }
