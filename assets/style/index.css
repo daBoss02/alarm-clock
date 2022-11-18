@@ -36,6 +36,9 @@ h2, p, button, input {
 }
 
 /* Clock */
+.justify {
+  text-align: center;
+}
 .clock {
   background-color: #050036;
   width: 400px;
@@ -47,11 +50,16 @@ h2 {
   font-size: 50px;
   text-align: center;
 }
-
-p {
+.flex {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+p, i {
   text-align: center;
   color: var(--app-green);
   font-size: 14px;
+  line-height: 14px;
 }
 input, button {
   width: 85px;

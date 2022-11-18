@@ -19,11 +19,16 @@
   <body class="body">
     <div class="container center">
       <div class="clock center">
-        <div>
+        <div class="justify">
           <h2 class="current-time"></h2>
-          <p class="alarm-time"><i class="fa-solid fa-bell"></i></p>
-          <input class="input" type="text" placeholder="00:00">
-          <button class="set-alarm">Set Alarm</button>
+          <div class="flex">
+            <i class="fa-solid fa-bell"></i>
+            <p class="alarm-time"></p>
+          </div>
+          <form>
+            <input class="input" type="text" placeholder="00:00" maxlength="5" required>
+            <button class="set-alarm">Set Alarm</button>
+          </form>
         </div>
       </div>
     </div>
