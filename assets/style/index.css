@@ -1,26 +1,23 @@
 @import './reset.css';
 
 :root {
---app-dark-bg: #1a1d28;
---app-light-bg: #f0f2f4;
---app-red: #ff3c57;
---app-green: #33ab4e;
---app-purple: #833cff;
---app-purple-hover: #5225a0;
---app-orange: #ff833c;
---app-orange-hover: #cc6123;
---app-blue: #3c57ff;
---app-blue-hover: #364ee6;
---app-gray: #3b3f51;
---app-gray-hover: #353848;
-
---app-header-height: 56px;
-
---app-border-radius: 4px;
+  --app-dark:          #030022                   ;
+  --app-light:         #f0f2f4                   ;
+  --app-blue:          #95c2ff                   ;
+  --app-blue-hover:    #5aa0ff                   ;
+  --app-green:         #95ffd2                   ;
+  --app-green-hover:   #6effc1                   ;
+  --app-red:           #ff95c2                   ;
+  --app-red-hover:     #ff6eab                   ;
+  --app-purple:        #9d95ff                   ;
+  --app-purple-hover:  #796eff                   ;
+  --app-orange:        #ffd295                   ;
+  --app-orange-hover:  #ffc16e                   ;
+  --app-yellow:        #f7ff95                   ;
 }
 
 .body {
-  background-color:var(--app-dark-bg);
+  background-color: var(--app-dark);
 }
 
 .container {
@@ -28,7 +25,52 @@
   margin-inline: auto;
 }
 
-p, button {
-  color: #fff;
+.center {
+  display: grid;
+  place-items: center;
+  height: 100vh;
 }
 
+h2, p, button, input {
+  color: var(--app-light);
+}
+
+/* Clock */
+.clock {
+  background-color: #050036;
+  width: 400px;
+  height: 175px;
+  border-radius: 10px;
+}
+
+h2 {
+  font-size: 50px;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  color: var(--app-green);
+  font-size: 14px;
+}
+input, button {
+  width: 85px;
+  height: 30px;
+  text-align: center;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+input {
+  background-color: #95ffd227;
+  border: 1px solid #95ffd238;
+}
+input:hover, input:focus {
+  background-color: #95ffd319;
+}
+button {
+  background-color: var(--app-purple);
+  margin-left: 10px;
+}
+button:hover {
+  background-color: var(--app-purple-hover);
+}
